@@ -1,0 +1,276 @@
+#ChatApplicationContainer
+{
+  height: 100vh;
+  width: 100%;
+  /* background-color: hotpink; */
+  margin: auto;
+  /* position: fixed; */
+}
+#userDetails
+{
+    height: 11%;
+    width: 100%;
+    background-color: #19242b;
+    display: flex;
+    flex-direction: row;
+}
+#chat-profile-section
+{
+    height: 100%;
+    width: 12%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#chat-profile
+{
+    height: 85%;
+    width: 70%;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#chat-user-sections
+{
+    height: 100%;
+    width: 53%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+#chat-name
+{
+    height: 55%;
+    width: 100%;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    margin-left: 2%;
+    color: whitesmoke;
+}
+#users-div
+{
+    height: 45%;
+    width: 100%;
+    /* background-color: #19242b; */
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 2%;
+    color: whitesmoke;
+}
+#chat-icons-section
+{
+    height: 100%;
+    width: 35%;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.chat-icon
+{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: whitesmoke;
+}
+/* #main-container
+{
+    height: 100%;
+    width: 100%;
+    background-color: #111b21;
+} */
+#messageContainer 
+{
+    /* height: 28.2rem; */
+    height: 79%;
+    width: 100%;
+    margin: auto;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-color: #222e35;
+}
+#form-container {
+    /* background-color: aqua; */
+    height: 10%;
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    background-color: #19242b;
+}
+#text-box-sec
+{
+    height: 100%;
+    width: 75%;
+    /* background-color: #222e35; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#form-container input[type="text"] {
+    height: 3rem;
+    width: 90%;
+    border-radius: 10px;
+    outline: 0;
+    border: none;
+    padding-left: 2%;
+    /* padding-left: 2%; */
+}
+#form-container input[type="text"]::placeholder
+{
+    padding-left: 2.5%;
+}
+#imageBtn
+{
+    /* height: 3rem;
+    width: 35%;
+    background-color: black; */
+    position: absolute; left: -9999px; opacity: 0;
+}
+#text-icon-sec
+{
+    height: 100%;
+    width: 15%;
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#emoji-icon,#attach-icon
+{
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #85afd9;
+}
+#form-container button {
+    height: 3rem;
+    width: 15%;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.send-icon
+{
+    font-size: 1.3rem;
+    color: #85afd9;
+    cursor: pointer;
+}
+.msg-li
+{
+    /* height: 3rem */
+    min-width: 50px;
+    max-width: 300px;
+    list-style: none;
+    /* line-height: 3rem; */
+    margin-top: 1%;
+    padding: 10px 15px; 
+    background-color: #85afd9;
+    clear: both;
+    overflow: auto;
+    overflow-wrap: break-word;
+    height: auto;
+    color: whitesmoke;
+}
+.join-li
+{
+    list-style: none;    
+}
+.msg-content
+{
+    color: whitesmoke;
+    list-style: none;
+}
+.img-li
+{
+    height: auto;
+}
+.img-style
+{
+    height: 15rem;
+    width: 15rem;
+    margin-top: 2%;
+    /* background-color: black; */
+}
+.authorStyle 
+{
+    font-size: 0.8rem;
+    margin-left: -0%;
+    margin-top: -0%;
+    color: #55a3ee;
+}
+.message-left {
+    float: left;
+    background-color: #2a3942;
+    margin-left: -2%;
+    text-align: justify;
+    border-radius: 15px 15px 15px 0px;
+}
+.message-right {
+    float: right;
+    margin-right: 2%;
+    background-color: #87b1dc;
+    text-align: justify;
+    border-radius: 15px 15px 0px 15px;
+}
+#name-cont
+{
+    height: 5rem;
+    width: 75%;
+    margin: auto;
+    background-color: blue;
+    /* padding: 2% 0%; */
+    /* position: sticky; */
+    /* top: 0%;
+    z-index: 5; */
+}
+#profileSection
+{
+    height: 95%;
+    width: 45%;
+    background-color: hotpink;
+    display: flex;
+    flex-direction: row;
+}
+#imgSection
+{
+    height: 100%;
+    width: 15%;
+    background-color: aqua;
+    margin-left: 2.5%;
+    /* width: 100%; */
+    
+    border-radius: 100%;
+}
+#imgSection img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+/* .message-right
+{
+  height: auto;
+  width: auto;
+  background-color: pink;
+  padding-right: 5%;
+} */
+.custom-icon::before 
+{
+    font-size: 2rem;
+    content: url('https://static.vecteezy.com/system/resources/previews/016/314/381/original/call-icon-free-png.png'); /* Use your own icon path */
+}
+#emoji-section
+{
+    position: absolute;
+    bottom: 10%;
+    /* height: 10rem; */
+}

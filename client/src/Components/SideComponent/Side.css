@@ -1,0 +1,268 @@
+#container
+{
+    height: 100%;
+    width: 100%;
+    background-color: #111b21;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#mySection
+{
+    height: 11%;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: row;
+}
+#myNameSection
+{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: pink; */
+    overflow: hidden;
+}
+#myName
+{
+    height: 55%;
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: end;
+    font-size: 1.3rem;
+}
+#myName label
+{
+    padding-left: 5%;
+    font-weight: bolder;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+#myDescription
+{
+    height: 45%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 5%;
+    color: whitesmoke;
+    opacity: 0.7;
+}
+#myProfileSection
+{
+    height: 100%;
+    width: 20%;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#myImage
+{
+    height: 80%;
+    width: 80%;
+    border-radius: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+#myImage img
+{
+    height: 100%;
+    width: 100%;
+}
+#myIconSection
+{
+    height: 100%;
+    width: 20%;
+    /* background-color: hotpink; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#myselfEdit
+{
+    font-size: 1.2rem;
+    color: whitesmoke;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+#myselfEdit:hover
+{
+    color: #87b1dc;
+}
+#otherSection
+{
+    height: 89%;
+    width: 100%;
+    background-color: #111b21;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+#otherSection h2
+{
+    margin-left: 2.5%;
+    font-size: 1.2rem;
+}
+#otherUsers
+{
+    height: 15%;
+    width: 95%;
+    background-color: #111b21;
+    border-radius: 15px 15px 15px 0px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid gray;
+    transition: 0.2s ease;
+    margin-top: 2%;
+    margin-left: 2.5%;
+}
+#otherUsers:hover
+{
+    background-color: #2a3942;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#otherUserImgSec
+{
+    height: 100%;
+    width: 30%;
+    /* background-color: hotpink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#otherUserImgSec div
+{
+    height: 65%;
+    width: 60%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+#otherUserImgSec div img
+{
+    height: 100%;
+    width: 100%;
+}
+#otherUserNameSec
+{
+    height: 100%;
+    width: 40%;
+    /* background-color: white; */
+    display: flex;
+    justify-content: start;
+    padding-left: 5%;
+    align-items: center;
+    color: whitesmoke;
+    opacity: 0.9;
+}
+#otherUserActiveSec
+{
+    height: 100%;
+    width: 30%;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#otherUserActiveSec span
+{
+    height: 25%;
+    width: 90%;
+    /* background-color: powderblue; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bolder;
+    color: whitesmoke;
+    opacity: 0.6;
+}
+.activeCircle
+{
+    color: lightgreen;
+    opacity: 1;
+}
+
+.modal
+{
+    transition: 0.3s ease-in-out;
+    height: 50%;
+    width: 65%;
+    z-index: 10;
+    /* background-color: antiquewhite; */
+    /* margin-top: -5%; */
+    position: absolute;
+    display: flex;
+    top: 25%;
+    left: 15%; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+#edit-icon
+{
+    position: absolute;
+    z-index: 3;
+    height: 30%;
+    width: 50%;
+    /* background-color: #87b1dc; */
+    bottom: -30%;
+    color: whitesmoke;
+    font-size: 2rem;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-content:hover img
+{
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    opacity: 0.6;
+}
+.modal-content:hover #edit-icon
+{
+    left: 25%;
+    /* opacity: 2; */
+    cursor: pointer;
+    top: 50%;
+    color: whitesmoke;
+}
+.modal-content
+{
+    height: 75%;
+    width: 80%;
+    /* background-color: #87b1dc; */
+    display: flex;
+    flex-direction: column;
+    border-radius: 100%;
+    overflow: hidden;
+    transition: 0.2s ease-in;
+    position: relative;
+}
+.modal-content img
+{
+    height: 100%;
+    width: 100%;
+    /* border-radius: 100%; */
+}
+.close
+{
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: whitesmoke;
+    cursor: pointer;
+}
